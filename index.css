@@ -16,6 +16,7 @@ body,html
  }
 #Home_background
 {
+	background:black;
 	z-index:-1;
 	height: 100%;
     position:fixed;
@@ -33,7 +34,10 @@ body,html
  
 padding:0;
 }
- 
+ .arrow_div
+	{
+			display:none;
+	}
 .content_div
 {
                 display:none;
@@ -46,10 +50,10 @@ padding:0;
 
 .content_head
 {
-                border-bottom:2px solid skyblue;
+                border-bottom:2px solid rgb(0, 128, 128);
 				display:none;
 				font-size:20px;
-				color:#87ceeb;
+				color:rgb(0, 128, 128);
 }
 
 .content_body
@@ -63,11 +67,11 @@ padding:0;
 
 .transp-bg
 {
-height: 100%;
-background-color:rgba(0,0,0,0.6);
-position:fixed;
-top:0;
-left:0;
+				height: 100%;
+				background-color:rgba(0,0,0,0.6);
+				position:fixed;
+				top:0;
+				left:0;
 }
  
  
@@ -85,10 +89,18 @@ display:none;
 }
 .nave p:hover
 {
-               font-size:25px;
+
+}
+
+.home_text_right span
+{
+	padding:10px;
 }
  
- 
+.home_text_right span:hover
+{
+ font-size:23px;	
+}	
  
 .home_text_right
 {
@@ -115,7 +127,7 @@ line-height:20px;
 
 .head_center span
 {
-	color:green;
+	color:rgb(0, 128, 128);
 }
  
 .wrap_about
@@ -149,14 +161,8 @@ display:none;
 
 
 .skills_tech {
-               
- 
-               
                 perspective: 1000px;
-               
                 height:100px;
-               
- 
                 color:#d3d9d3;
 }
  
@@ -259,11 +265,23 @@ display:none;
 	}
 	.home_text_right
 	{
+		height:auto;
+		line-height:40px;
 		display:none;
 		margin-top:0px;
 		text-align:center;
 		padding-top:0;
 		padding-left:0;
+		background-color:rgb(0, 128, 128);
+		color:white;
+	}
+	#myCarousel
+{
+		height:330px;
+}
+	.arrow_div
+	{
+			display:block;
 	}
 	.content_body
 	{
@@ -274,3 +292,4 @@ display:none;
 				display:none;
 	}
 }
+

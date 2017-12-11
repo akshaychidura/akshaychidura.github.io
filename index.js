@@ -5,8 +5,8 @@ $(document).ready(function(){
                 $('.navigate').click(function(){
                                 $('.home_text_left').animate({width:'0px'},1000,function(){
 												$('.home_text_left').hide();
-												if($(window).width() >= 500) {
-													$('.home_text_right').css({"backgroundColor":"#87ceeb","color":"black"});
+												if($(window).width() >= 1020) {
+													$('.home_text_right').css({"backgroundColor":"rgb(0, 128, 128)","color":"white"});
 												}
                                                 $('.content_div').slideDown(function(){
 													
@@ -22,8 +22,12 @@ $(document).ready(function(){
                                
                                                                
                 });
+				$('.arrow_div').click(function(){
+					$('html,body').animate({
+													scrollTop: $(".home_text_right").offset().top},'slow');
+				});
 				$('.click_home').click(function(){
-					if($(window).width() <= 500) {
+					if($(window).width() <= 1024) {
 						
 						$('.content_div').hide(1000,function(){
 							$('.home_text_right').slideUp(1000,function(){
@@ -37,7 +41,7 @@ $(document).ready(function(){
 					else
 					{
 						if ( $('.content_div').css('display') != 'none' ){
-						$('.content_div').hide(1000,function(){
+						$('.content_div').slideUp(1000,function(){
 							$('.home_text_left').show().animate({width:'70%'},1000);
 							$('.home_text_right').css({"backgroundColor":"rgba(0,0,0,0)","color":"white"});
 						});

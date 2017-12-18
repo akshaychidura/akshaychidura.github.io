@@ -1,7 +1,7 @@
 $(document).ready(function(){
    
 				$('.nave p').slideDown(1000).animate({letterSpacing: "+=3px"});
-                $('.head_center').slideDown(1000).animate({letterSpacing: "+=6px",wordSpacing: "+=10px"});
+                $('.head_center').slideDown(1000).animate({letterSpacing: "+=3px",wordSpacing: "+=10px"});
                 $('.navigate').click(function(){
                                 $('.home_text_left').animate({width:'0px'},1000,function(){
 												$('.home_text_left').hide();
